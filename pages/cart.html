@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/myscript.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">TeknoMarket</div>
+        <div class="menu-toggle" id="mobileMenu">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="product-detail.html">Ürün Detayı</a></li>
+            <li><a href="cart.html">Sepet</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 style="margin-bottom: 20px;">Alışveriş Sepetiniz</h2>
+
+        <!-- Flexbox Yapısıyla Listelenen Basit Sepet -->
+        <div class="cart-item">
+            <div>
+                <h4>Oyuncu Bilgisayarı</h4>
+                <p style="font-size: 12px; color: #777;">Adet: 1</p>
+            </div>
+            <p style="font-weight: bold;">35.000 TL</p>
+        </div>
+
+        <div class="cart-item">
+            <div>
+                <h4>Kablosuz Mouse</h4>
+                <p style="font-size: 12px; color: #777;">Adet: 1</p>
+            </div>
+            <p style="font-weight: bold;">1.200 TL</p>
+        </div>
+
+        <div style="text-align: right; margin-top: 25px;">
+            <h3>Genel Toplam: <span style="color: #e74c3c;">36.200 TL</span></h3>
+            <button class="btn" onclick="alert('Ödeme sayfasına yönlendiriliyorsunuz...')">Alışverişi Tamamla</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TeknoMarket - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>

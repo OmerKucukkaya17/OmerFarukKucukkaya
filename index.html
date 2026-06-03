@@ -1,56 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Ömer Faruk Küçükkaya</title>
-  <style>
-    body {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      padding-top: 50px;
-    }
-
-    video {
-      display: block;
-      margin: 0 auto 20px auto; 
-      height: 200px;
-    }
-
-    p {
-      max-width: 600px;
-      margin: 20px auto; 
-      line-height: 1.6;
-    }
-
-    .link-buton {
-      display: block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: blue;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeknoMarket | Ana Sayfa</title>
+    <!-- Harici CSS Bağlantısı -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Harici JS Bağlantısı -->
+    <script src="scripts/myscript.js" defer></script>
 </head>
-
 <body>
 
-  <a href="2.Ödev/index.html">
-    <video autoplay loop muted playsinline>
-      <source src="https://cdn-icons-mp4.flaticon.com/512/13971/13971341.mp4" type="video/mp4">
-      Tarayıcınız videoyu desteklemiyor.
-    </video>
-  </a>
+    <!-- Ortak Navbar -->
+    <nav class="navbar">
+        <div class="logo">TeknoMarket</div>
+        <div class="menu-toggle" id="mobileMenu">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="pages/products.html">Ürünler</a></li>
+            <li><a href="pages/product-detail.html">Ürün Detayı</a></li>
+            <li><a href="pages/cart.html">Sepet</a></li>
+            <li><a href="pages/contact.html">İletişim</a></li>
+        </ul>
+    </nav>
 
-  <h1>Ömer Faruk Küçükkaya'nın Sayfası</h1>
-  <h2>Chevrolet Markası</h2>
+    <!-- Ana İçerik Alanı -->
+    <main>
+        <section class="hero-banner">
+            <h1>Teknoloji Dünyasına Hoş Geldiniz</h1>
+            <p>En uygun fiyatlı yazılım ve donanım ürünleri burada.</p>
+            <a href="pages/products.html" class="btn">Alışverişe Başla</a>
+        </section>
 
-  <p>
-    1911 yılında kurulan <strong>Chevrolet</strong>, otomobil dünyasının en köklü markalarından biridir. 
-    Camaro'dan Corvette'e kadar geniş bir yelpazede araçlar sunarak sürüş keyfini herkes için erişilebilir kılıyor.
-  </p>
+        <!-- Kriter 8: Entegre Basit JavaScript Uygulaması (Quiz) -->
+        <section class="quiz-section">
+            <h2>🎁 Bilgi Yarışması: İndirim Kuponu Kazan!</h2>
+            <p>Aşağıdaki 2 basit soruya doğru cevap ver, sepetinde kullanabileceğin kodu kap!</p>
+            
+            <div class="quiz-options">
+                <p><b>1. Web sayfalarının iskeletini oluşturan dil hangisidir?</b></p>
+                <input type="radio" name="q1" value="wrong"> CSS <br>
+                <input type="radio" name="q1" value="correct"> HTML <br>
+                <input type="radio" name="q1" value="wrong"> JavaScript
+            </div>
 
-  <a href="2.Ödev/index.html" class="link-buton">2. Ödev</a>
+            <div class="quiz-options">
+                <p><b>2. Tasarımları şekillendirmek ve stil vermek için hangisi kullanılır?</b></p>
+                <input type="radio" name="q2" value="correct"> CSS <br>
+                <input type="radio" name="q2" value="wrong"> Python <br>
+                <input type="radio" name="q2" value="wrong"> SQL
+            </div>
+
+            <button id="checkQuiz" class="btn">Cevapları Kontrol Et</button>
+            <p id="quizResult" style="margin-top: 15px; font-weight: bold;"></p>
+        </section>
+    </main>
+
+    <!-- Ortak Footer -->
+    <footer>
+        <p>&copy; 2026 TeknoMarket - Tüm Hakları Saklıdır.</p>
+    </footer>
 
 </body>
 </html>

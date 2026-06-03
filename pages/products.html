@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz</title>
+    <!-- Üst klasördeki CSS ve JS bağlantıları -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/myscript.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">TeknoMarket</div>
+        <div class="menu-toggle" id="mobileMenu">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="product-detail.html">Ürün Detayı</a></li>
+            <li><a href="cart.html">Sepet</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 style="margin-bottom: 20px;">Ürün Listesi</h2>
+        
+        <!-- Grid Yapısı Kullanılarak Listeleme Yapıldı -->
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image-placeholder">Görsel (Laptop)</div>
+                <h3>Oyuncu Bilgisayarı</h3>
+                <p>Yüksek performanslı işlemci ve grafik kartı.</p>
+                <p style="color: #e74c3c; font-weight: bold; margin-top: 5px;">35.000 TL</p>
+                <a href="product-detail.html" class="btn btn-detail">Detay Gör</a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-placeholder">Görsel (Mouse)</div>
+                <h3>Kablosuz Mouse</h3>
+                <p>Ergonomik ve yüksek DPI hassasiyetli oyuncu faresi.</p>
+                <p style="color: #e74c3c; font-weight: bold; margin-top: 5px;">1.200 TL</p>
+                <a href="product-detail.html" class="btn btn-detail">Detay Gör</a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-placeholder">Görsel (Klavye)</div>
+                <h3>Mekanik Klavye</h3>
+                <p>RGB aydınlatmalı, blue switch mekanik klavye.</p>
+                <p style="color: #e74c3c; font-weight: bold; margin-top: 5px;">2.500 TL</p>
+                <a href="product-detail.html" class="btn btn-detail">Detay Gör</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TeknoMarket - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
